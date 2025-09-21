@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omnia Exam Portal</title>
+  <link rel="stylesheet" href="style-exam.css">
+</head>
+<body>
+  <div class="exam-container">
+    <header>
+      <h1 id="examTitle">Omnia Exam</h1>
+      <p id="examDesc">Answer all questions below.</p>
+    </header>
+
+    <form id="examForm">
+      <div id="questionsContainer"></div>
+      <button type="button" id="submitBtn" class="btn">Submit Answers</button>
+    </form>
+
+    <div id="result" style="display:none"></div>
+  </div>
+
+  <!-- Always load the generic exam engine -->
+  <script src="script-exam.js"></script>
+</body>
+</html>
