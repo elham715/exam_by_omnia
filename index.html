@@ -1,0 +1,19 @@
+<div class="overlay-content">
+  <h1>Welcome to Omnia Exams</h1>
+  <p>Select an exam to begin:</p>
+  <button onclick="startExam('exam1')" class="btn">📘 Algebra Exam</button>
+  <button onclick="startExam('exam2')" class="btn">📗 Calculus Exam</button>
+</div>
+
+<script>
+function startExam(set){
+  const email=localStorage.getItem('omniaUserEmail');
+  if(!email){
+    alert('Please enter email before starting exam!');
+    window.location.href='index.html'; 
+    return;
+  }
+  // send query param to exam page
+  window.location.href=`exam.html?set=${set}`;
+}
+</script>
